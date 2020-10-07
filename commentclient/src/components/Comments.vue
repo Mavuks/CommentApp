@@ -188,7 +188,7 @@ export default {
           }
            else if(this.EmailIsValid2)
           {
-            if(!this.validEmail(this.Email)){
+            if(!this.EmailIsValid){
 
               this.Errors.push('Valid email required.');
             }else{
