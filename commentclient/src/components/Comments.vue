@@ -135,7 +135,7 @@ export default {
 
   methods: {
 
-    retrieveAuctionList() {
+    retrieveCommentList() {
 
       CommentDataService.getAll()
         .then(response => {
@@ -147,7 +147,7 @@ export default {
         });
     },
     refreshList() {
-      this.retrieveAuctionList();
+      this.retrieveCommentList();
     },
 
     deleteComm(id) {
@@ -228,7 +228,7 @@ export default {
   },
 
   mounted() {
-    this.retrieveAuctionList();
+    this.retrieveCommentList();
   },
 
 };
